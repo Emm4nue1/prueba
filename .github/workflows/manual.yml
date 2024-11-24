@@ -26,5 +26,5 @@ jobs:
       # Construir imagen para el Frontend
       - name: Build Frontend Docker Image
         run: |
-          docker build -t integradorhia2024-frontend:latest ./TP5-DiazMarcos-Frontend
-          docker push integradorhia2024-frontend:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/frontend:latest ./TP5-DiazMarcos-Frontend
+          docker push ${{ secrets.DOCKER_USERNAME }}/frontend:latest

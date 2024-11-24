@@ -10,6 +10,7 @@ services:
       - red-integrador
 
   frontend:
+    image: emanuel97/frontend:latest
     build:
       context: ./TP5-DiazMarcos-Frontend
       dockerfile: Dockerfile
